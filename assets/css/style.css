@@ -79,6 +79,18 @@ header .container{
     border-radius: 3px;
     margin-top: 88px;
     overflow: hidden;
+    position: relative;
+}
+.button-right{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 35%;
+    right: 10px;
+}
+.button-right ion-icon{
+    width: 32px;
+    height: 32px;
 }
 .stories_slider{
     width: 100%;
@@ -189,7 +201,62 @@ header .container{
 .right-column{
     width: 294px;
     height: 463px;
-    background-color: #EEEEEE;
     margin-top: 55px;
+}
+.owner-profile{
+    display: flex;
+    align-items: center;
+    margin: 57px 0 27px 0;
+}
+.owner-profile > img{
+    margin-right: 17px;
+}
+.desc-profile{
+    font-size: 12px;
+    color: #8E8E8E;
+    font-weight: 300;
+}
+.desc-profile > span{
+    color: #000000;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.title-suggestions{
+    display: flex;
+    justify-content: space-between;
+    color: #8E8E8E;
+    font-weight: 500;
+    font-size: 12px;
+    margin-bottom: 17px;
+}
+.suggestion-profile{
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+    
+}
+.suggestion-profile > img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+.suggestion-profile > div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.suggestion-profile > div > a{
+    color: #139EF2;
+    font-size: 12px;
+    font-weight: 500;
+}
+.suggestion-profile span{
+    
 }
 
