@@ -3,6 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     height: 2000px; /*Provisório*/
+    background-color: rgb(250, 250, 250);
 }
 
 header{
@@ -66,6 +67,54 @@ header .container{
 
 .left-column{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.stories{
+    width: 614px;
+    height: 118px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-top: 88px;
+    overflow: hidden;
+}
+.stories_slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.story{
+    width: 66px;
+    height: 91px;
+    margin: 18px 0 0 14px;
+    
+}
+.bg-img{
+    background: url(../icons/stories_background.jpg);
+    width: 66px;
+    height: 66px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.bg-img img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    
+}
+.userName_story{
+    width: 66px;
+    height: 12px;
+    color: #262626;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .right-column{
