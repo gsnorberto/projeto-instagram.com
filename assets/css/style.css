@@ -3,6 +3,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(250, 250, 250);
+    overflow-x: hidden;
 }
 
 header{
@@ -15,7 +16,7 @@ header{
 }
 
 .container {
-    max-width: 936px;
+    max-width: 935px;
     display: flex;
     margin: 0 auto;
 }
@@ -67,8 +68,9 @@ header .container{
     height: 29px;
 }
 
-.left-column{
-    flex: 1;
+.main-content{
+    width:614px;
+    margin-right: 28px;
     display: flex;
     flex-direction: column;
 }
@@ -204,8 +206,8 @@ ion-icon[name="ellipsis-horizontal"]{
     font-weight: 500;
 }
 
-.right-column{
-    width: 294px;
+.sidebar{
+    width: 293px;
     height: 463px;
     margin-top: 55px;
 }
@@ -274,4 +276,53 @@ ion-icon[name="ellipsis-horizontal"]{
 }
 .info div:first-child{
     margin: 35px 0 19px 0;
+}
+
+.mobile-only{
+    display: none;
+}
+
+.bottom-bar{
+    width: 100%;
+    height: 54px;
+    background-color: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 19px;
+}
+.bottom-bar ion-icon{
+    width: 22px;
+    height: 22px;
+}
+
+@media(max-width: 935px){
+    .sidebar{
+        display: none;
+    }
+    .main-content{
+        margin: 0 auto;
+        
+    }
+}
+
+@media(max-width: 614px){
+    header input,
+    .icons_header a:nth-child(2),
+    .icons_header a:nth-child(3),
+    .icons_header a:nth-child(4){
+        display: none;
+    }
+    .icons_header a:nth-child(1){
+        margin-right: 16px;
+    }
+    .container > a{
+        width: 50%;
+    }
+    .mobile-only{
+        display: block;
+    }
 }
