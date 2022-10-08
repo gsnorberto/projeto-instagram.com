@@ -271,10 +271,15 @@ ion-icon[name="ellipsis-horizontal"]{
     height: 24px;
 }
 .comment-input .button{
-    color: #139EF2;
+    color: #B2DFFC;
     font-size: 12px;
     font-weight: 500;
+    transition: all 0.3s ease-out;
 }
+.comment-input .button:hover{
+    color: #0095F6;
+}
+
 .comment-input input{
     position: relative;
     width: 100%;
