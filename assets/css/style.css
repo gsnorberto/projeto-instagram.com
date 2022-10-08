@@ -6,19 +6,25 @@ body {
     overflow-x: hidden;
 }
 
+
+
 header{
     width: 100%;
     height: 54px;
     background-color: #FFFFFF;
     border-bottom: 1px solid #DBDBDB;
     position: fixed;
-    z-index: 999;
+    z-index: 1;
 }
 
 .container {
     max-width: 935px;
-    display: flex;
+    min-width: 336px;
+   display:flex;
     margin: 0 auto;
+}
+.content{
+    width: 100%;
 }
 
 header .container{
@@ -56,7 +62,6 @@ header .container{
 }
 
 .logo{
-    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -65,18 +70,17 @@ header .container{
     padding-left: 10px;
     margin-left: 10px;
     border-left: 1px solid #DBDBDB;
-    height: 29px;
 }
 
 .main-content{
-    width:614px;
+    max-width: 614px;
     margin-right: 28px;
     display: flex;
     flex-direction: column;
 }
 
 .stories{
-    width: 614px;
+    width: 100%;
     height: 118px;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
@@ -136,14 +140,15 @@ header .container{
 }
 
 .feed{
-    width: 614px;
+    width: 100%;
     margin-top: 24px;
 }
 .header_post{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 15px 17px 13px 17px;
+    padding: 15px 17px 13px 17px;
 }
 ion-icon[name="ellipsis-horizontal"]{
     color: #262626;
@@ -166,20 +171,23 @@ ion-icon[name="ellipsis-horizontal"]{
 
 .post{
     width: 100%;
-    height: 749px;
     border: 1px solid #DBDBDB;
     border-radius: 3px;
     margin-bottom: 60px;
 }
-.post > img{
-    width: 612px;
-    height: 612px;
+.post > a {
+    width: 100%;
+
+}
+.post > a > img{
+    width: 100%;
 }
 .actions_post{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 9px 15px;
+    padding: 9px 15px;
 }
 .actions_post > div{
     display: flex;
@@ -195,6 +203,7 @@ ion-icon[name="ellipsis-horizontal"]{
     margin-left: 15px;
     font-size: 14px;
     font-weight: 300;
+    padding-bottom: 9px;
 }
 .numberOfLikes_post > a > img{
     width: 20px;
@@ -216,15 +225,15 @@ ion-icon[name="ellipsis-horizontal"]{
     align-items: center;
     margin: 57px 0 27px 0;
 }
-.owner-profile > img{
+.owner-profile > a{
     margin-right: 17px;
 }
-.owner-profile .desc-profile{
+.owner-profile .desc-profile a{
     font-size: 14px;
     color: #8E8E8E;
     font-weight: 300;
 }
-.desc-profile > span{
+.desc-profile > a > span{
     color: #262626;
     font-weight: 500;
     display: block;
@@ -240,13 +249,13 @@ ion-icon[name="ellipsis-horizontal"]{
     font-size: 12px;
     margin-bottom: 17px;
 }
-.suggestion-profile{
+.suggestion-profile {
     display: flex;
     align-items: center;
     margin-bottom: 17px;
     
 }
-.suggestion-profile > img{
+.suggestion-profile > a > img{
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -293,6 +302,7 @@ ion-icon[name="ellipsis-horizontal"]{
     justify-content: space-between;
     align-items: center;
     margin: 0 19px;
+    display:none;
 }
 .bottom-bar ion-icon{
     width: 22px;
@@ -305,24 +315,55 @@ ion-icon[name="ellipsis-horizontal"]{
     }
     .main-content{
         margin: 0 auto;
-        
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .icons_header{
+        margin-right: 16px;
     }
 }
 
 @media(max-width: 614px){
     header input,
-    .icons_header a:nth-child(2),
-    .icons_header a:nth-child(3),
-    .icons_header a:nth-child(4){
+    .icons_header{
         display: none;
     }
-    .icons_header a:nth-child(1){
-        margin-right: 16px;
-    }
-    .container > a{
-        width: 50%;
-    }
-    .mobile-only{
+    .logo .mobile-only{
         display: block;
+    }
+    .container{
+        display: block;
+    }
+    header .container > a{
+        width: 65%;
+    }
+    .logo{
+        width: 100%;
+        justify-content: space-between;
+        margin: 0 16px 0 20px;
+    }
+    .logo img{
+        border: 0;
+    }
+
+    .button-right{
+        display: none;
+    }
+
+    .feed{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .bottom-bar{
+        display: flex;
+        margin: 0;
+        padding-right:20px;
+        padding-left:20px;
+    }
+    .stories{
+        border: 0;
+        margin-top: 54px;
     }
 }
