@@ -184,10 +184,13 @@ ion-icon[name="ellipsis-horizontal"]{
 }
 .post > a {
     width: 100%;
-
 }
 .post > a > img{
     width: 100%;
+}
+.post > a > video{
+    width: 100%;
+    height: 100%;
 }
 .actions_post{
     width: 100%;
@@ -243,6 +246,7 @@ ion-icon[name="ellipsis-horizontal"]{
 .comment > div{
     display: flex;
     font-size: 16px;
+    width: 100%;
 }
 .comment a{
     font-weight: 700;
@@ -306,6 +310,11 @@ ion-icon[name="ellipsis-horizontal"]{
 }
 .owner-profile > a{
     margin-right: 17px;
+}
+.owner-profile > a > img{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
 }
 .owner-profile .desc-profile a{
     font-size: 14px;
