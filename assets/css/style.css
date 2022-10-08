@@ -222,6 +222,68 @@ ion-icon[name="ellipsis-horizontal"]{
     font-weight: 500;
 }
 
+.comments-area{
+    padding: 0 15px;
+    width: 100%;
+}
+.view-all-comments{
+    color: #8E8E8E;
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.comments{
+
+}
+.comment{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.comment > div{
+    display: flex;
+    font-size: 16px;
+}
+.comment a{
+    font-weight: 700;
+    margin-right: 5px;
+}
+.comment ion-icon{
+    color: #8E8E8E;
+}
+
+.publication-date{
+    color: #8E8E8E;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 15px 0 5px 15px;
+}
+
+.comment-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding: 10px 15px;
+}
+.comment-input > a > ion-icon{
+    width: 24px;
+    height: 24px;
+}
+.comment-input .button{
+    color: #139EF2;
+    font-size: 12px;
+    font-weight: 500;
+}
+.comment-input input{
+    position: relative;
+    width: 100%;
+    border: 0;
+}
+.comment-input input::placeholder{
+    color: #979797;
+    text-align: left;
+}
 .sidebar{
     position: absolute;
     left: 642px;
