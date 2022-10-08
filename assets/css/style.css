@@ -23,6 +23,11 @@ header{
    display:flex;
     margin: 0 auto;
 }
+
+main .container {
+    position: relative;
+}
+
 .content{
     width: 100%;
 }
@@ -52,6 +57,7 @@ header .container{
 
 .icons_header{
     display: flex;
+    margin-right: 16px;
 }
 .icons_header a{
     margin-left: 20px;
@@ -62,6 +68,7 @@ header .container{
 }
 
 .logo{
+    margin-left: 20px;
     display: flex;
     align-items: center;
 }
@@ -216,6 +223,11 @@ ion-icon[name="ellipsis-horizontal"]{
 }
 
 .sidebar{
+    position: absolute;
+    left: 642px;
+}
+.sidebar > div{
+    position: fixed;
     width: 293px;
     height: 463px;
     margin-top: 55px;
@@ -315,12 +327,6 @@ ion-icon[name="ellipsis-horizontal"]{
     }
     .main-content{
         margin: 0 auto;
-    }
-    .logo{
-        margin-left: 20px;
-    }
-    .icons_header{
-        margin-right: 16px;
     }
 }
 
